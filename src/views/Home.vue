@@ -1,18 +1,28 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <LeafLetMap msg="A TreeMarkable Map"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import LeafLetMap from "@/components/LeafLetMap.vue";
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    LeafLetMap
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
